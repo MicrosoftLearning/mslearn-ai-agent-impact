@@ -30,31 +30,31 @@ After you complete this exercise, you'll be able to:
 
 Use the runtime from Exercise 03 or the provider's D3 checkpoint. The provider must keep the repair fixture isolated from core and supply the seeded incident and reset controls. Do not change a shared tenant policy to simulate a failure.
 
-# Task 01: Repair and redeploy the qualification filter
+## Task 01: Repair and redeploy the qualification filter
 
-## Introduction
+### Introduction
 
 Jordan must distinguish a broken sourcing filter from a working safety control. In the isolated fixture, the filter admits suppliers with expired or missing qualification expiry, but the independent guardrail correctly blocks their release.
 
-## Description
+### Description
 
 In this task, you'll reproduce the defect, review a Copilot-assisted correction, extend boundary coverage, and prove that the repaired remote fixture ran. **Estimated time:** 40 minutes.
 
-## Success criteria
+### Success criteria
 
 - The original regression failures and blocked shortlist are reproduced without changing evidence or policy.
 - The repaired filter rejects missing, malformed, and expired dates and accepts expiry exactly on launch.
 - A new deployed fixture revision proposes only CMO-01, passes POL-01, and leaves core behavior unchanged.
 
-## Learning resource
+### Learning resource
 
 - [Starter qualification module](../../../../Labfiles/04-caldova-agents/Python/qualification-tool/qualification.py)
 - [Independent policy](../../../../Labfiles/04-caldova-agents/Python/qualification-tool/policy.py)
 - [Original runtime/export contract](../../../../Labfiles/04-caldova-agents/README.md)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Reproduce the defect in isolation
+#### Key task 01: Reproduce the defect in isolation
 
 Use the frozen fixture dates, not the core launch date or today's date.
 
@@ -90,7 +90,7 @@ Use the frozen fixture dates, not the core launch date or today's date.
 
 </details>
 
-### Key task 02: Apply a reviewed corrective action
+#### Key task 02: Apply a reviewed corrective action
 
 Reuse the independently tested policy helper rather than creating a second date parser.
 
@@ -149,7 +149,7 @@ Reuse the independently tested policy helper rather than creating a second date 
 
 </details>
 
-### Key task 03: Redeploy and verify the remote correction
+#### Key task 03: Redeploy and verify the remote correction
 
 A local pass doesn't prove that the hosted tool imported the repaired module.
 
@@ -169,30 +169,30 @@ A local pass doesn't prove that the hosted tool imported the repaired module.
 
 Congratulations! You've diagnosed an implementation defect, applied a bounded correction, and validated its deployed effect while preserving Caldova's independent guardrail.
 
-# Task 02: Diagnose integration and governance failures
+## Task 02: Diagnose integration and governance failures
 
-## Introduction
+### Introduction
 
 A failed decision can originate in protocol configuration, stale code, permissions, or invalid evidence. Jordan must identify the failing boundary before making a corrective change.
 
-## Description
+### Description
 
 In this task, you'll resolve one provider-seeded integration incident, verify agent ownership and source-access evidence, and test a harmless governance block. **Estimated time:** 30 minutes.
 
-## Success criteria
+### Success criteria
 
 - One integration incident has a reproducible symptom, evidence-backed cause, bounded corrective action, and successful retest.
 - Six logical agents have real ownership and runtime-identity mappings.
 - The isolated unapproved scraper is blocked, its invocation is denied, and permitted core decisions still work.
 
-## Learning resource
+### Learning resource
 
 - [Agent registry](/microsoft-365/admin/manage/agent-registry)
 - [Connected Foundry agent prerequisites](/microsoft-copilot-studio/add-agent-foundry-agent)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Isolate and correct an integration incident
+#### Key task 01: Isolate and correct an integration incident
 
 Ask the provider to enable exactly one safe incident on your isolated revision. Don't randomly break a shared integration.
 
@@ -219,7 +219,7 @@ Ask the provider to enable exactly one safe incident on your isolated revision. 
 
 </details>
 
-### Key task 02: Verify ownership and actual runtime identity
+#### Key task 02: Verify ownership and actual runtime identity
 
 Registry IDs, application IDs, Foundry IDs, and runtime Entra identities are different identifiers.
 
@@ -236,7 +236,7 @@ Registry IDs, application IDs, Foundry IDs, and runtime Entra identities are dif
 
 </details>
 
-### Key task 03: Block the isolated unapproved agent
+#### Key task 03: Block the isolated unapproved agent
 
 Use only the provider's harmless training object and retain an actual denial test.
 
@@ -255,30 +255,30 @@ Use only the provider's harmless training object and retain an actual denial tes
 
 Congratulations! You've diagnosed an integration boundary and verified governance through execution evidence, not just agent descriptions or inventory labels.
 
-# Task 03: Optimize and evaluate without regression
+## Task 03: Optimize and evaluate without regression
 
-## Introduction
+### Introduction
 
 Jordan needs evidence that a change improves the system without removing safety controls. You measure a bounded optimization and keep core acceptance separate from the fixture's deterministic scorecard.
 
-## Description
+### Description
 
 In this task, you'll establish a small repeatable baseline, apply one reversible optimization, evaluate actual runs, and decide whether to retain it. **Estimated time:** 30 minutes.
 
-## Success criteria
+### Success criteria
 
 - Before/after measurements use the same prompts, profile, source snapshot, model, and safety controls.
 - A retained optimization reduces duplicate retrieval calls by at least 20%, doesn't increase median end-to-end latency, and introduces zero acceptance/safety failures.
 - Core acceptance and all 24 fixture checks are recorded separately, with supported built-in metrics and missing metrics explicitly identified.
 
-## Learning resource
+### Learning resource
 
 - [Evaluate Foundry agents](/azure/foundry/observability/how-to/evaluate-agent)
 - [Fixture cases](../../../../Labfiles/04-caldova-agents/data/evaluation-cases.jsonl) and [export requirements](../../../../Labfiles/04-caldova-agents/README.md)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Establish a controlled baseline
+#### Key task 01: Establish a controlled baseline
 
 Use a small engineering sample, not a claim of production throughput or a contractual service-level objective.
 
@@ -295,7 +295,7 @@ Use a small engineering sample, not a claim of production throughput or a contra
 
 </details>
 
-### Key task 02: Apply and measure one reversible change
+#### Key task 02: Apply and measure one reversible change
 
 Don't optimize by removing the guardrail or hiding errors.
 
@@ -313,7 +313,7 @@ Don't optimize by removing the guardrail or hiding errors.
 
 </details>
 
-### Key task 03: Evaluate the isolated repair fixture
+#### Key task 03: Evaluate the isolated repair fixture
 
 The fixture evaluator requires exactly one real exported result for each supplied case. Performance repetitions belong in a different file.
 
@@ -336,7 +336,7 @@ The fixture evaluator requires exactly one real exported result for each supplie
 
 </details>
 
-### Key task 04: Review core quality and supported model evaluations
+#### Key task 04: Review core quality and supported model evaluations
 
 The core operational result has its own acceptance matrix. Neither its policy nor its missing evidence is identical to POL-01.
 
@@ -355,25 +355,25 @@ The core operational result has its own acceptance matrix. Neither its policy no
 
 Congratulations! You've evaluated both data profiles and made an evidence-based optimization decision without weakening Caldova's controls.
 
-# Task 04: Record readiness and clean up
+## Task 04: Record readiness and clean up
 
-## Introduction
+### Introduction
 
 Peter needs to understand both the provisional recommendation and the evidence that still prevents a production release. Jordan must leave the training estate in a known state without deleting shared resources.
 
-## Description
+### Description
 
 In this task, you'll complete the release-readiness record, explain the customer outcome, and remove or restore assigned resources. **Estimated time:** 20 minutes.
 
-## Success criteria
+### Success criteria
 
 - A reviewer can trace customer requirements to implementation, incidents, corrective actions, versions, and validation evidence.
 - The release decision states unresolved technical, data, regional, and regulatory requirements explicitly.
 - Assigned billable/test resources and temporary credentials are removed or restored, with evidence retained according to policy.
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Make the readiness decision
+#### Key task 01: Make the readiness decision
 
 A completed workshop and an approved customer production release are different conclusions.
 
@@ -401,7 +401,7 @@ A completed workshop and an approved customer production release are different c
 
 </details>
 
-### Key task 02: Explain the business outcome and remaining work
+#### Key task 02: Explain the business outcome and remaining work
 
 Demonstrate the two workshop outcomes through concrete artifacts, not an unmeasured return-on-investment claim.
 
@@ -418,7 +418,7 @@ Demonstrate the two workshop outcomes through concrete artifacts, not an unmeasu
 
 </details>
 
-### Key task 03: Remove or restore only your assigned resources
+#### Key task 03: Remove or restore only your assigned resources
 
 Preserve approved evidence first. Shared resources and administrator-required blocks must remain intact.
 
@@ -448,4 +448,3 @@ Congratulations! You've implemented and deployed an evidence-backed agent soluti
 ## Summary
 
 You have successfully completed this exercise when the applicable task evidence is present and unresolved activities are labeled. You practiced core-data grounding, simulation-aware decisions, bounded actions, gated deployment, fault isolation, remote repair validation, controlled optimization, and accountable release assessment.
-

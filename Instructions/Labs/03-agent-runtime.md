@@ -29,31 +29,31 @@ After you complete this exercise, you'll be able to:
 
 Use your completed environment or the provider's D2 checkpoint. Confirm that the provider-supplied runtime source, tool adapters, hosted SDK harness, exact deployment commands, and rollback procedure satisfy the [L400 readiness contract](../../../../Labfiles/04-caldova-agents/l400-provider-readiness.md). Missing code is a blocker, not an invitation to invent a deployment command.
 
-# Task 01: Configure scoped specialist tools
+## Task 01: Configure scoped specialist tools
 
-## Introduction
+### Introduction
 
 The same capacity question should produce the same evidence-backed result across channels. You give each specialist the tools it needs while keeping provisional core selection separate from the strict qualification-fixture policy.
 
-## Description
+### Description
 
 In this task, you'll configure the five-agent team, bind core data and policy tools, and validate the SDK guardrail independently. **Estimated time:** 35 minutes.
 
-## Success criteria
+### Success criteria
 
 - Specialist tests reproduce core quantities, ordered suppliers, and missing-readiness evidence.
 - Each agent's source and write permissions match its role.
 - The hosted SDK guardrail invokes the independent core validator and rejects a tampered proposal.
 
-## Learning resource
+### Learning resource
 
 - [Core-profile configuration and result contract](../../../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md)
 - [Fabric IQ connection guide](/azure/foundry/agents/how-to/tools/fabric-iq)
 - [Hosted-agent deployment guide](/azure/foundry/agents/quickstarts/quickstart-hosted-agent)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Configure the operational specialists
+#### Key task 01: Configure the operational specialists
 
 The source profile is trusted configuration, not something a user can override in a prompt.
 
@@ -71,7 +71,7 @@ The source profile is trusted configuration, not something a user can override i
 
 </details>
 
-### Key task 02: Constrain the recommendation and tool surfaces
+#### Key task 02: Constrain the recommendation and tool surfaces
 
 A helpful recommendation shouldn't create an unauthorized execution path.
 
@@ -88,7 +88,7 @@ A helpful recommendation shouldn't create an unauthorized execution path.
 
 </details>
 
-### Key task 03: Verify the hosted compliance tool
+#### Key task 03: Verify the hosted compliance tool
 
 The guardrail must use independent deterministic evidence, not repeat the model's conclusion.
 
@@ -113,25 +113,25 @@ The guardrail must use independent deterministic evidence, not repeat the model'
 
 Congratulations! You've configured role-scoped specialists and a real deterministic checkpoint for Caldova's core decision path.
 
-# Task 02: Implement and deploy gated orchestration
+## Task 02: Implement and deploy gated orchestration
 
-## Introduction
+### Introduction
 
 An agent description doesn't execute handoffs or enforce a release gate. You implement those controls in the prepared runtime and deploy your reviewed revision.
 
-## Description
+### Description
 
 In this task, you'll complete conditional orchestration, test failure paths, and deploy an isolated runtime revision with rollback evidence. **Estimated time:** 40 minutes.
 
-## Success criteria
+### Success criteria
 
 - Runtime code executes the required call order and conditional sourcing.
 - Missing, unsuccessful, timed-out, or cross-profile guardrail verdicts never release an unchecked draft.
 - A deployed revision returns an LP001 core decision with real trace and version evidence.
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Implement the control flow in code
+#### Key task 01: Implement the control flow in code
 
 Use the actual functions and typed clients in the provider package. Don't create a parallel prompt-only workflow.
 
@@ -154,7 +154,7 @@ Use the actual functions and typed clients in the provider package. Don't create
 
 </details>
 
-### Key task 02: Test release and failure paths
+#### Key task 02: Test release and failure paths
 
 A valid rejection is as important as a valid provisional recommendation.
 
@@ -171,7 +171,7 @@ A valid rejection is as important as a valid provisional recommendation.
 
 </details>
 
-### Key task 03: Deploy and prove the deployed behavior
+#### Key task 03: Deploy and prove the deployed behavior
 
 Deploy the reviewed artifact, then verify execution rather than relying on deployment status.
 
@@ -193,29 +193,29 @@ Deploy the reviewed artifact, then verify execution rather than relying on deplo
 
 Congratulations! You've implemented and deployed Caldova's gated orchestration rather than merely describing an agent team.
 
-# Task 03: Connect Teams and trace decisions
+## Task 03: Connect Teams and trace decisions
 
-## Introduction
+### Introduction
 
 Alex's interface must reach the deployed orchestration entry point, not a similarly named prompt agent. You verify the connection protocol and follow one real request across the boundary.
 
-## Description
+### Description
 
 In this task, you'll connect the Foundry agent, republish Procurement Desk, and trace an end-to-end decision while preserving source restrictions. **Estimated time:** 30 minutes.
 
-## Success criteria
+### Success criteria
 
 - Procurement questions remain local while capacity requests reach the core orchestrator.
 - The Activity protocol is enabled and an actual Teams request reaches the deployed revision.
 - A correlated trace proves gate-before-final behavior, correct core output, and restricted raw-data access.
 
-## Learning resource
+### Learning resource
 
 - [Connect to a Foundry agent from Copilot Studio](/microsoft-copilot-studio/add-agent-foundry-agent)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Connect the correct published runtime
+#### Key task 01: Connect the correct published runtime
 
 The connection requires protocol support as well as the correct endpoint and agent ID.
 
@@ -233,7 +233,7 @@ The connection requires protocol support as well as the correct endpoint and age
 
 </details>
 
-### Key task 02: Run and trace the business request
+#### Key task 02: Run and trace the business request
 
 Verify the business result and control path on the same real request.
 
@@ -256,7 +256,7 @@ Verify the business result and control path on the same real request.
 
 </details>
 
-### Key task 03: Retest boundaries after integration
+#### Key task 03: Retest boundaries after integration
 
 A new connection can accidentally widen the data returned to the business user.
 

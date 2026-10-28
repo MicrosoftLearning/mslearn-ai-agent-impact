@@ -29,30 +29,30 @@ After you complete this exercise, you'll be able to:
 
 Use your completed Exercise 01 environment or the provider's D1 checkpoint. Keep the synthetic procurement RFP identifiers separate from core supplier identifiers unless the provider supplies a reviewed crosswalk. The decision service is connected in Exercise 03, not during this exercise.
 
-# Task 01: Configure procurement knowledge and boundaries
+## Task 01: Configure procurement knowledge and boundaries
 
-## Introduction
+### Introduction
 
 Alex needs a reliable view of supplier contacts and RFP status. Procurement knowledge doesn't establish manufacturing qualification, and the agent must not gain broad operational access merely because Alex can author it.
 
-## Description
+### Description
 
 In this task, you'll create Procurement Desk, attach approved knowledge, and test citations and refusal behavior. **Estimated time:** 25 minutes.
 
-## Success criteria
+### Success criteria
 
 - Procurement Desk answers an open-RFP question using resolvable procurement citations.
 - It has only the approved supplier directory and RFP knowledge sources.
 - It reports an unavailable decision service rather than inventing a capacity answer.
 
-## Learning resource
+### Learning resource
 
 - [Procurement agent instructions](../../../../Labfiles/04-caldova-agents/agent-instructions.md)
 - [Supplier directory](../../../../Labfiles/04-caldova-agents/data/approved-suppliers.md) and [RFP seed](../../../../Labfiles/04-caldova-agents/data/rfp-tracker.csv)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Create the business-owned entry point
+#### Key task 01: Create the business-owned entry point
 
 Keep the agent's purpose narrow until the governed decision service is connected.
 
@@ -69,7 +69,7 @@ Keep the agent's purpose narrow until the governed decision service is connected
 
 </details>
 
-### Key task 02: Ground answers in approved procurement sources
+#### Key task 02: Ground answers in approved procurement sources
 
 Use the prepared SharePoint items, not a local file attachment mistaken for a live governed source.
 
@@ -86,7 +86,7 @@ Use the prepared SharePoint items, not a local file attachment mistaken for a li
 
 </details>
 
-### Key task 03: Verify the access and delegation boundary
+#### Key task 03: Verify the access and delegation boundary
 
 A refusal is useful only when permissions also prevent the underlying access.
 
@@ -104,25 +104,25 @@ A refusal is useful only when permissions also prevent the underlying access.
 
 Congratulations! You've built Alex's procurement entry point without using prompt instructions as a substitute for source authorization.
 
-# Task 02: Implement and test follow-up actions
+## Task 02: Implement and test follow-up actions
 
-## Introduction
+### Introduction
 
 Alex should be able to record an RFP follow-up without changing supplier qualification. A retry must not create duplicate work or a fabricated success receipt.
 
-## Description
+### Description
 
 In this task, you'll bind the prepared append-only action and test confirmation, idempotency, and invalid requests. **Estimated time:** 20 minutes.
 
-## Success criteria
+### Success criteria
 
 - A confirmed open-RFP request creates one real FollowUpRequests item and receipt.
 - Repeating the same client request ID returns the existing receipt without a duplicate.
 - A rejected or failed request creates no new item and doesn't claim success.
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Bind the approved action
+#### Key task 01: Bind the approved action
 
 Use the supplied flow contract rather than granting general list-edit permissions.
 
@@ -139,7 +139,7 @@ Use the supplied flow contract rather than granting general list-edit permission
 
 </details>
 
-### Key task 02: Test confirmation and safe retry
+#### Key task 02: Test confirmation and safe retry
 
 Use an unused request ID for your learner so another learner's existing receipt doesn't mask a failed write.
 
@@ -156,7 +156,7 @@ Use an unused request ID for your learner so another learner's existing receipt 
 
 </details>
 
-### Key task 03: Test rejection without false success
+#### Key task 03: Test rejection without false success
 
 Invalid input and tool errors must remain visible to the requester.
 
@@ -174,29 +174,29 @@ Invalid input and tool errors must remain visible to the requester.
 
 Congratulations! You've enabled a practical procurement action with confirmation, idempotency, and a narrow write boundary.
 
-# Task 03: Publish and verify audience access
+## Task 03: Publish and verify audience access
 
-## Introduction
+### Introduction
 
 A test-pane success doesn't prove that Alex can use the published agent or that unrelated users are excluded. You test the actual business channel and its audience.
 
-## Description
+### Description
 
 In this task, you'll publish Procurement Desk to the assigned Teams group and verify positive and negative access. **Estimated time:** 15 minutes.
 
-## Success criteria
+### Success criteria
 
 - An authorized Teams user can invoke the published agent and open its procurement citations.
 - An out-of-group test user cannot activate the agent under the assigned availability policy.
 - Published version and audience evidence are recorded without confusing activation with source authorization.
 
-## Learning resource
+### Learning resource
 
 - [Publish an agent to Teams](/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Publish to the training audience
+#### Key task 01: Publish to the training audience
 
 Use the provider-approved publication path and don't make the agent organization-wide.
 
@@ -212,7 +212,7 @@ Use the provider-approved publication path and don't make the agent organization
 
 </details>
 
-### Key task 02: Validate the published experience
+#### Key task 02: Validate the published experience
 
 Test the same boundaries outside the authoring pane.
 
@@ -231,7 +231,7 @@ Test the same boundaries outside the authoring pane.
 
 Congratulations! You've delivered a scoped business interface ready to connect to Caldova's governed technical runtime.
 
-### Key task 03: Test rejection without false success
+#### Key task 03: Test rejection without false success
 
 Invalid input and tool errors must remain visible to the requester.
 
@@ -248,4 +248,3 @@ Invalid input and tool errors must remain visible to the requester.
 </details>
 
 Congratulations! You've enabled a practical procurement action with confirmation, idempotency, and a narrow write boundary.
-

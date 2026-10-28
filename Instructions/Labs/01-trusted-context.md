@@ -25,30 +25,30 @@ After you complete this exercise, you'll be able to:
 
 **Estimated time:** 75 minutes
 
-# Task 01: Curate and verify the core data
+## Task 01: Curate and verify the core data
 
-## Introduction
+### Introduction
 
 Peter's decision depends on the launch plan, not on whichever capacity field an agent happens to retrieve first. The core files describe a multinational operational estate, while Caldova's UK policy concerns approved processing and regulated-data handling.
 
-## Description
+### Description
 
 In this task, you'll establish the source manifest, load six core CSVs into a Lakehouse, and validate the LP001 baseline. **Estimated time:** 25 minutes.
 
-## Success criteria
+### Success criteria
 
 - Six typed Delta tables contain 318 rows and pass the supplied relationship checks.
 - LP001 reports 270,000 target units, 251,100 qualified units, an 18,900-unit gap, and PL003 as its binding plant.
 - The evidence manifest distinguishes core data from the isolated qualification fixture.
 
-## Learning resource
+### Learning resource
 
 - [Core curation notebook](../../../../Allfiles/L300-TW-Data/notebooks/curate_caldova_tables.ipynb)
 - [Core business definitions](../../../../Allfiles/L300-TW-Data/agent/business-context-instructions.txt)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Establish your working copy and source manifest
+#### Key task 01: Establish your working copy and source manifest
 
 Identify exactly which assets you use before creating cloud resources.
 
@@ -65,7 +65,7 @@ Identify exactly which assets you use before creating cloud resources.
 
 </details>
 
-### Key task 02: Curate the source tables
+#### Key task 02: Curate the source tables
 
 Use the supplied notebook rather than manually inferring CSV types.
 
@@ -101,7 +101,7 @@ Use the supplied notebook rather than manually inferring CSV types.
 
 </details>
 
-### Key task 03: Verify the decision baseline
+#### Key task 03: Verify the decision baseline
 
 The notebook's final queries are the reference for operational quantities and provisional supplier selection.
 
@@ -120,30 +120,30 @@ The notebook's final queries are the reference for operational quantities and pr
 
 Congratulations! You've established Caldova's authoritative operational baseline and a reproducible source manifest for the decision team.
 
-# Task 02: Replay and investigate operational signals
+## Task 02: Replay and investigate operational signals
 
-## Introduction
+### Introduction
 
 A launch plan is a snapshot. Operational signals can reveal that the snapshot needs investigation, but they don't silently become a revised capacity plan. You retain both source meaning and event provenance.
 
-## Description
+### Description
 
 In this task, you'll configure an Eventhouse destination, replay the supplied events, and verify a bounded set of simulated exceptions. **Estimated time:** 25 minutes.
 
-## Success criteria
+### Success criteria
 
 - The typed `operational_events` table receives one complete 10-event replay.
 - A replay-scoped, deduplicated query returns four strict threshold breaches.
 - The agent evidence distinguishes simulation, current replay time, and the frozen business plan.
 
-## Learning resource
+### Learning resource
 
 - [Eventstream custom endpoints](/fabric/real-time-intelligence/event-streams/add-source-custom-app)
 - [Publisher](../../../../Allfiles/L300-TW-Data/event-simulator/replay_events.py) and [table/mapping/query script](../../../../Allfiles/L300-TW-Data/event-simulator/detect_operational_exceptions.kql)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Create the typed destination and source
+#### Key task 01: Create the typed destination and source
 
 Preserve the supplied event schema rather than relying on a partially inferred first event.
 
@@ -160,7 +160,7 @@ Preserve the supplied event schema rather than relying on a partially inferred f
 
 </details>
 
-### Key task 02: Validate and replay the event cohort
+#### Key task 02: Validate and replay the event cohort
 
 Each publisher invocation generates new EventIDs. Select one replay cohort instead of counting everything ever received.
 
@@ -193,7 +193,7 @@ Each publisher invocation generates new EventIDs. Select one replay cohort inste
 
 </details>
 
-### Key task 03: Verify exceptions without double counting
+#### Key task 03: Verify exceptions without double counting
 
 Use a one-replay filter and event identity to prevent retries from inflating the result.
 
@@ -221,30 +221,30 @@ Use a one-replay filter and event identity to prevent retries from inflating the
 
 Congratulations! You've implemented a traceable simulation path and separated operational alerts from Caldova's authoritative launch-capacity decision.
 
-# Task 03: Bind and verify business context
+## Task 03: Bind and verify business context
 
-## Introduction
+### Introduction
 
 Jordan needs every specialist to use the same business definitions. An ontology supplies vocabulary and relationships, while actual source permissions control which data a runtime identity can read.
 
-## Description
+### Description
 
 In this task, you'll bind core entities, configure business definitions, and test a restricted operational connection. **Estimated time:** 25 minutes.
 
-## Success criteria
+### Success criteria
 
 - The ontology binds all six curated tables using the supplied business keys.
 - The same question returns consistent LP001 quantities and supplier ranking with explicit evidence.
 - A procurement-only identity cannot read restricted operational sources through the runtime connection.
 
-## Learning resource
+### Learning resource
 
 - [Connect Foundry agents to Fabric IQ](/azure/foundry/agents/how-to/tools/fabric-iq)
 - [L400 core instructions](../../../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md)
 
-## Key tasks
+### Key tasks
 
-### Key task 01: Bind the operational vocabulary
+#### Key task 01: Bind the operational vocabulary
 
 Keep source keys visible so that a reviewer can resolve every material claim.
 
@@ -262,7 +262,7 @@ Keep source keys visible so that a reviewer can resolve every material claim.
 
 </details>
 
-### Key task 02: Test meaning and source scope
+#### Key task 02: Test meaning and source scope
 
 Compare outputs against the notebook, not against the model's confidence.
 
@@ -280,7 +280,7 @@ Compare outputs against the notebook, not against the model's confidence.
 
 </details>
 
-### Key task 03: Save a reproducible checkpoint
+#### Key task 03: Save a reproducible checkpoint
 
 Make the context recoverable without granting new permissions.
 
@@ -296,6 +296,5 @@ Make the context recoverable without granting new permissions.
 </details>
 
 Congratulations! You've established shared operational meaning and a verified source-access boundary for Caldova's agent team.
-
 
 
