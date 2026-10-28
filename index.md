@@ -1,5 +1,5 @@
 ---
-title: Exercise Instructions
+title: TechWorkshop: Deliver real business impact with Caldova agents
 permalink: index.html
 layout: home
 ---
