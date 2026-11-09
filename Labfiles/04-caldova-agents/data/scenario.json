@@ -1,0 +1,22 @@
+{
+  "scenario_id": "external-support",
+  "as_of": "2026-10-01",
+  "launch_date": "2026-11-30",
+  "baseline_units": 100000,
+  "gap_percent": 7,
+  "required_region": "UK",
+  "evidence_conflict": false,
+  "plants": [
+    {"id": "CAP-01", "plant": "Caldova North", "line": "N-SF1", "available_units": 2000, "region": "UK", "batch_status": "Released", "audit_id": "AUD-P01"},
+    {"id": "CAP-02", "plant": "Caldova Central", "line": "C-SF1", "available_units": 1500, "region": "UK", "batch_status": "Released", "audit_id": "AUD-P02"},
+    {"id": "CAP-03", "plant": "Caldova South", "line": "S-SF1", "available_units": 1000, "region": "UK", "batch_status": "Released", "audit_id": "AUD-P03"}
+  ],
+  "cmos": [
+    {"id": "CMO-01", "name": "Caldova Partner A", "qualification_status": "Approved", "qualification_expiry": "2027-06-30", "capacity_units": 3000, "transfer_days": 30, "cost_per_unit_gbp": 12, "region": "UK", "audit_id": "AUD-C01"},
+    {"id": "CMO-02", "name": "Caldova Partner B", "qualification_status": "Approved", "qualification_expiry": "2026-09-30", "capacity_units": 5000, "transfer_days": 20, "cost_per_unit_gbp": 8, "region": "UK", "audit_id": "AUD-C02"},
+    {"id": "CMO-03", "name": "Caldova Partner C", "qualification_status": "Approved", "qualification_expiry": null, "capacity_units": 4500, "transfer_days": 25, "cost_per_unit_gbp": 9, "region": "UK", "audit_id": "AUD-C03"},
+    {"id": "CMO-04", "name": "Caldova Partner D", "qualification_status": "Approved", "qualification_expiry": "2027-06-30", "capacity_units": 4000, "transfer_days": 25, "cost_per_unit_gbp": 10, "region": "EU", "audit_id": "AUD-C04"},
+    {"id": "CMO-05", "name": "Caldova Partner E", "qualification_status": "Approved", "qualification_expiry": "2027-06-30", "capacity_units": 4000, "transfer_days": 90, "cost_per_unit_gbp": 11, "region": "UK", "audit_id": "AUD-C05"},
+    {"id": "CMO-06", "name": "Caldova Partner F", "qualification_status": "Approved", "qualification_expiry": "2027-06-30", "capacity_units": 3500, "transfer_days": 30, "cost_per_unit_gbp": 10, "region": "UK", "audit_id": ""}
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "reason": "L300 VM hosting requirements are not required for BYOS L400",
+      "source_record": {
+        "path": "Allfiles/L300-TW-Data/Data-VM-TechnicalRequirements.md",
+        "source_repository": "MicrosoftLearning/caip",
+        "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+        "source_path": "Allfiles/L300-TW-Data/Data-VM-TechnicalRequirements.md",
+        "upstream_git_blob": "75fef81f8b64193122db03d444402bd27b51fd70",
+        "upstream_sha256": "11744857f224a47b70256f02a7b6fe9e5e5a65cc126934062dcb6d05d4fa279c",
+        "imported_sha256": "11744857f224a47b70256f02a7b6fe9e5e5a65cc126934062dcb6d05d4fa279c",
+        "modified_on_import": false
+      }
+    },
+    {
+      "reason": "Optional L300 knowledge document outside workshop scope",
+      "source_record": {
+        "path": "Allfiles/L300-TW-Data/optional/knowledge/Change Control Procedure.docx",
+        "source_repository": "MicrosoftLearning/caip",
+        "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+        "source_path": "Allfiles/L300-TW-Data/optional/knowledge/Change Control Procedure.docx",
+        "upstream_git_blob": "b800c8e5978ef026672aeed24037e099a93efc30",
+        "upstream_sha256": "99c3905bae96e6df876896efd5cb5682d30c7afb31625ab5d699f79b58b73d5d",
+        "imported_sha256": "99c3905bae96e6df876896efd5cb5682d30c7afb31625ab5d699f79b58b73d5d",
+        "modified_on_import": false
+      }
+    },
+    {
+      "reason": "Optional L300 knowledge document outside workshop scope",
+      "source_record": {
+        "path": "Allfiles/L300-TW-Data/optional/knowledge/GMP Scheduling Guidance.docx",
+        "source_repository": "MicrosoftLearning/caip",
+        "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+        "source_path": "Allfiles/L300-TW-Data/optional/knowledge/GMP Scheduling Guidance.docx",
+        "upstream_git_blob": "796fbe89db045ad01fd4e413172fa55d260ddf24",
+        "upstream_sha256": "391e3abe2c366218bb83fac9e9441ee95d3d25f9252e6807f2d1d33c1171b3ca",
+        "imported_sha256": "391e3abe2c366218bb83fac9e9441ee95d3d25f9252e6807f2d1d33c1171b3ca",
+        "modified_on_import": false
+      }
+    },
+    {
+      "reason": "Optional L300 knowledge document outside workshop scope",
+      "source_record": {
+        "path": "Allfiles/L300-TW-Data/optional/knowledge/Supplier Evaluation Guidance.docx",
+        "source_repository": "MicrosoftLearning/caip",
+        "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+        "source_path": "Allfiles/L300-TW-Data/optional/knowledge/Supplier Evaluation Guidance.docx",
+        "upstream_git_blob": "e4cac0d16a1ace0693f39e2f3fadf9d78ca16dae",
+        "upstream_sha256": "043118ab9d757626399227150b787c7c6bb033a32c3ec08dacf6498707570445",
+        "imported_sha256": "043118ab9d757626399227150b787c7c6bb033a32c3ec08dacf6498707570445",
+        "modified_on_import": false
+      }
+    }
+  ]
+}

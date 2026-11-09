@@ -1,0 +1,6 @@
+PlantID,PlantName,Country,Region,PlantType,GMPStatus,PlantManager
+PL001,Plant 1,USA,NA,Drug Substance,Compliant,Marcus Lin
+PL002,Plant 2,Ireland,EMEA,Fill Finish,Compliant,Priya Nair
+PL003,Plant 3,Singapore,APAC,Packaging,Compliant,Tomas Vogel
+PL004,Plant 4,Switzerland,EMEA,Drug Substance,Compliant,Elena Fischer
+PL005,Plant 5,Canada,NA,Fill Finish,Compliant,Daniel Brooks

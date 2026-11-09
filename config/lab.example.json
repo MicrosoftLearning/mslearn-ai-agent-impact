@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "project": "41-620-21",
+  "mode": "BYOS",
+  "status": "not-configured",
+  "tenant_id": "",
+  "subscription_id": "",
+  "resource_group": "",
+  "location": "",
+  "fabric": {"capacity_id": "", "workspace_id": "", "ontology_id": ""},
+  "foundry": {"project_endpoint": "", "model_deployment": "", "runtime_revision": ""},
+  "procurement": {"site_url": "", "power_platform_environment_id": "", "training_group_id": ""},
+  "runtime_configs": {"orchestrator": "config/orchestrator.local.json", "guardrail": "config/guardrail.local.json", "fixture": "config/fixture.local.json", "procurement": "config/procurement.local.json"},
+  "evidence_store": "",
+  "checkpoint_status": {"D0": "Not run", "D1": "Not run", "D2": "Not run", "D3": "Not run", "D4": "Not run"}
+}

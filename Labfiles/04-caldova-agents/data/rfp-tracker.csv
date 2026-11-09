@@ -1,0 +1,4 @@
+rfp_id,cmo_id,service,status,last_updated,follow_up_requested
+RFP-01,CMO-01,Sterile fill-finish,Open,2026-10-01,false
+RFP-02,CMO-02,Sterile fill-finish,Open,2026-10-01,false
+RFP-03,CMO-03,Sterile fill-finish,Closed,2026-09-28,false

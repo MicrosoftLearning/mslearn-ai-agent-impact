@@ -1,10 +1,12 @@
 ---
-title: TechWorkshop - Deliver real business impact with Caldova agents
+title: "L400: Deliver real impact with Agents"
 permalink: index.html
 layout: home
 ---
 
-# TechWorkshop: Deliver real business impact with Caldova agents
+# L400: Deliver real impact with Agents
+
+> **Getting started:** Follow [tenant and workstation setup](Instructions/Setup.md), then work through the four exercises in order.
 
 Caldova needs a defensible response to a 7% launch-capacity gap. Peter, the chief operating officer (COO), needs a recommendation backed by manufacturing evidence. Alex in procurement needs supplier and request-for-proposal (RFP) tracking without unrestricted manufacturing access. Jordan, the platform engineer, must implement, deploy, diagnose, and validate the agent runtime.
 
@@ -31,7 +33,7 @@ Teams -> Caldova Procurement Desk (Copilot Studio)
          -> approved decision-support summary or Needs review
 ```
 
-Fabric IQ supplies governed operational context from curated core data and the ontology. The event simulator supplies explicitly synthetic signals through an Eventstream and Eventhouse. Foundry IQ supplies approved policy context. SharePoint supplies procurement knowledge and an append-only follow-up action. These sources aren't interchangeable.
+Fabric IQ supplies governed operational context from curated core data and the ontology. The event simulator supplies explicitly synthetic signals through an Eventstream and Eventhouse. Foundry IQ supplies approved policy context. SharePoint supplies procurement knowledge and an append-only follow-up action. These sources aren't interchangeable. The runtime retrieves approved policy through Azure AI Search; a separate Foundry IQ knowledge-base connection requires its own configuration.
 
 The Foundry team has five logical agents: one orchestrator and four specialists. Together with Procurement Desk, there are six. The guardrail uses a provider-supplied GitHub Copilot SDK harness and a deterministic tool. Separately, GitHub Copilot in VS Code assists with code changes. Agent 365 supplies inventory and administration, not workflow execution.
 
@@ -43,10 +45,10 @@ To complete this workshop, you need:
 - An isolated, provider-approved Fabric workspace and capacity, Lakehouse and Eventhouse creation rights, Eventstream authoring, and access to the supported Fabric IQ ontology integration.
 - A prepared Microsoft Foundry project, model deployment, policy knowledge base, runtime source package, tool adapters, deployment permissions, and tested deployment and rollback commands.
 - A training Microsoft 365 tenant with Copilot Studio authoring, SharePoint procurement access, the prepared follow-up flow, Teams publication rights, and scoped Agent 365 administration.
-- VS Code, GitHub Copilot, Git, Azure CLI, and Python 3.13 or later. The local qualification pack was previously checked with Python 3.14.5; use the provider's separately pinned hosted SDK interpreter and dependencies. Don't assume every dependency supports the newest Python release.
-- A working copy of the `L400-unify-data` branch from your lab provider and the [L400 provider handout requirements](../../../Labfiles/04-caldova-agents/l400-provider-readiness.md).
+- VS Code, GitHub Copilot, Git, Azure CLI and Python 3.12 for the supplied source and pinned dependencies. See the setup guide for other service-specific tooling.
+- A working copy of this repository at the assigned tested revision, [BYOS setup](Instructions/Setup.md), and the [L400 provider handout requirements](Labfiles/04-caldova-agents/l400-provider-readiness.md).
 
-> **Important:** This repository does not contain the deployable orchestrator, hosted SDK container, authenticated core-policy adapter, cloud export adapter, or tenant checkpoints. The provider must supply and smoke-test those assets before delivery. If they are missing, stop the affected implementation task. A local run or labeled walkthrough does not satisfy the deployment outcome.
+> **Implementation assets:** This repository includes runtime source, container and infrastructure definitions, service adapters and verification tools. Configure actual tenant services, connections, identities and deployment settings in the assigned environment.
 
 > **Note:** Fabric IQ, hosted-agent integrations, the Foundry connection in Copilot Studio, and some evaluation surfaces are preview or actively developed features. Verify availability and supported versions before delivery. Passing this training exercise is not a production certification.
 
@@ -81,7 +83,7 @@ Never map `CMO001` to `CMO-01` or apply the fixture's 24-check evaluator to a co
 
 Create an evidence folder in the provider-approved store, not in Git. Keep a requirements matrix, source manifest, deployment/version inventory, incident log, evaluation exports, performance comparison, and release decision. Record real run IDs, UTC timestamps, and actual identity mappings. Never copy credentials, connection strings, raw restricted records, or invented trace metadata into the evidence pack.
 
-A requirement is **Passed** only with the requested evidence. Use **Failed**, **Blocked**, or **Not run** otherwise. An expected safe rejection can pass a safety test, but it doesn't turn an incorrect implementation into a successful deployment. Preserve the original [110-minute exercise](../04-caldova-governed-agents.md) as a separate exercise.
+A requirement is **Passed** only with the requested evidence. Use **Failed**, **Blocked**, or **Not run** otherwise. An expected safe rejection can pass a safety test, but it doesn't turn an incorrect implementation into a successful deployment. Preserve the original [110-minute exercise](https://github.com/MicrosoftLearning/caip/blob/ad7f3e8361df2f7b44977221461f6c90718b7209/Instructions/Exercises/04-caldova-governed-agents.md) as a separate exercise.
 
 ## Exercises
 <hr>

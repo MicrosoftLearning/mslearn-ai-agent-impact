@@ -1,0 +1,18 @@
+{
+  "service": "procurement",
+  "tenant_id": "",
+  "revision": "",
+  "runtime_identity_oid": "",
+  "managed_identity_client_id": "",
+  "project_endpoint": "",
+  "agents": {},
+  "allowed_user_oids": [],
+  "api_audience": "",
+  "allowed_client_ids": [],
+  "evidence_account_url": "",
+  "evidence_container": "evidence",
+  "graph_site_id": "",
+  "rfp_list_id": "",
+  "followup_list_id": "",
+  "supplier_list_id": ""
+}

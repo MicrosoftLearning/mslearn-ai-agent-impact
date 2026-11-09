@@ -1,0 +1,5 @@
+# Normalize authored text; preserve the byte-verified upstream assets.
+* text=auto
+Allfiles/** -text
+Labfiles/** -text
+licenses/** -text

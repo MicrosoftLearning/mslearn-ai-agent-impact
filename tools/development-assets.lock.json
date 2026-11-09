@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "Reviewed development modifications; original import manifest remains authoritative provenance",
+  "files": [
+    {
+      "path": "Allfiles/L300-TW-Data/agent/business-context-instructions.txt",
+      "original_imported_sha256": "a530bdda287109a8fbbc4ca3efc074df5c2f8507045eb79140c6e5db72a43638",
+      "development_sha256": "e9616db6a9812bf1c220ac4c2b8bdc87f0e0e17bdfa5993f2c85cbb51029af25",
+      "reason": "Prevent alternate authoritative gap calculation and invented readiness evidence"
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/event-simulator/detect_operational_exceptions.kql",
+      "original_imported_sha256": "a4ccfd097b62c9392c1fd6dffc1c54e761ae587e7eac57491d50e54cfc8df648",
+      "development_sha256": "1da58e8676443e6ab6e148c52e1d898983a789231e2c5623212a60f0cd0c0e7b",
+      "reason": "Observed mapping syntax repair; cohort verification moved to scoped query"
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/notebooks/curate_caldova_tables.ipynb",
+      "original_imported_sha256": "c56ca0e012154019250634d94a229ba0ad31d87924373ae8165364ac3da0f6f3",
+      "development_sha256": "2437e55f8027cb2c17e849cdb395b833a92206e1ffc73fde991a95f9d75cddac",
+      "reason": "Observed Files/caldova-data path and final date checkpoint; intentional repair retained"
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/README.md",
+      "original_imported_sha256": "67326ae93665636782244812f1b0d9d00e375d8fc6520c63d4d7eab817997740",
+      "development_sha256": "6f835a76c18080ae0718591a54fa99d8160a585c43576115259172d3660636b3",
+      "reason": "Reviewed documentation adaptation for MicrosoftLearning workshop; source data and learner defects unchanged."
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/l400-provider-readiness.md",
+      "original_imported_sha256": "f50dd16799afcc98756d4f5d47817d27eee4f6550e17fff485b1a3277c3f22b2",
+      "development_sha256": "f8702f33d7073876d18e016fece5f21008c59c31e77cdf06b5b90668d28ba723",
+      "reason": "Reviewed documentation adaptation for MicrosoftLearning workshop; source data and learner defects unchanged."
+    }
+  ]
+}

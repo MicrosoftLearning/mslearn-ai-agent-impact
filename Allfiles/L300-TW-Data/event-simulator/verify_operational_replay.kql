@@ -1,0 +1,24 @@
+// Replace REPLACE_WITH_ACTUAL_REPLAY_ID with the eight hex digits from the full replay.
+// Run each numbered block separately. Priming is a different one-event cohort.
+// 1. Exact deduplicated cohort count and strict LP001 breach count.
+let ReplayId = 'REPLACE_WITH_ACTUAL_REPLAY_ID';
+let Cohort = materialize(operational_events
+    | where SourceSystem == 'CaldovaLabSimulator'
+    | where EventID startswith strcat('SIM-', ReplayId, '-')
+    | summarize arg_max(EventTime, *) by EventID);
+let UniqueEvents = toscalar(Cohort | count);
+let Breaches = toscalar(Cohort | where LaunchProgramID == 'LP001' and MetricValue > Threshold | count);
+print Replay=ReplayId, UniqueEvents=UniqueEvents, StrictBreaches=Breaches,
+      Passed=(ReplayId matches regex '^[0-9a-f]{8}$' and UniqueEvents == 10 and Breaches == 4)
+
+// 2. Inspect the four actual breaches and retain their event identities.
+let ReplayId = 'REPLACE_WITH_ACTUAL_REPLAY_ID';
+operational_events
+| where SourceSystem == 'CaldovaLabSimulator'
+| where EventID startswith strcat('SIM-', ReplayId, '-')
+| summarize arg_max(EventTime, *) by EventID
+| where LaunchProgramID == 'LP001' and MetricValue > Threshold
+| extend AmountOverThreshold = round(MetricValue - Threshold, 1)
+| project EventID, EventTime, SourceSystem, LaunchProgramID, EventType, PlantID,
+          BatchID, CMOID, MetricName, MetricValue, Threshold, AmountOverThreshold, Unit, Severity
+| order by EventTime asc

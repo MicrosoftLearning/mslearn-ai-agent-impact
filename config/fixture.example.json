@@ -1,0 +1,29 @@
+{
+  "service": "fixture",
+  "tenant_id": "",
+  "revision": "",
+  "runtime_identity_oid": "",
+  "managed_identity_client_id": "",
+  "project_endpoint": "",
+  "agents": {
+    "capacity": {
+      "name": "",
+      "version": ""
+    },
+    "cmo": {
+      "name": "",
+      "version": ""
+    },
+    "coo": {
+      "name": "",
+      "version": ""
+    }
+  },
+  "allowed_user_oids": [],
+  "api_audience": "",
+  "allowed_client_ids": [],
+  "evidence_account_url": "",
+  "evidence_container": "evidence",
+  "guardrail_azure_endpoint": "",
+  "guardrail_model": ""
+}

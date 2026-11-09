@@ -9,6 +9,8 @@ lab:
 
 # Exercise 03: Implement and deploy the decision team
 
+> **Repository:** Start with [setup](../Setup.md) and the [runtime guide](../Runtime.md). Use your assigned tenant and check the actual results of each hands-on task.
+
 ## Scenario
 
 Peter needs the same capacity answer regardless of which interface starts the request. You configure the five-agent Foundry team against the core profile, implement its release gate in the prepared codebase, deploy an isolated revision, and connect Procurement Desk to that executable runtime.
@@ -27,7 +29,28 @@ After you complete this exercise, you'll be able to:
 
 ## Before you begin
 
-Use your completed environment or the provider's D2 checkpoint. Confirm that the provider-supplied runtime source, tool adapters, hosted SDK harness, exact deployment commands, and rollback procedure satisfy the [L400 readiness contract](../../../../Labfiles/04-caldova-agents/l400-provider-readiness.md). Missing code is a blocker, not an invitation to invent a deployment command.
+Use your completed environment or your captured D2 artifacts. Follow [Runtime](../Runtime.md)
+sections 3–5 for the actual identity, source-pin, specialist, deployment and acceptance
+commands. The reference implementation is supplied; assess it against the
+[L400 readiness contract](../../Labfiles/04-caldova-agents/l400-provider-readiness.md),
+make a reviewed change, and prove your own deployed revision.
+
+| Exercise surface | Actual repository implementation |
+|---|---|
+| Core orchestration / conditional sourcing / release gate | `runtime/orchestrator.py` |
+| Live curated tables, Eventhouse and pinned Foundry calls | `runtime/adapters.py` |
+| Independent SDK validation tool | `runtime/guardrail.py` |
+| Native Responses and authenticated Activity | `runtime/server.py` |
+| Strict request/profile/config contracts | `runtime/contracts.py` |
+| Local positive and failure checks | `.\\.venv\\Scripts\\python.exe -m unittest discover -s tests -v` |
+| Identity, specialist creation, source pin, deploy/invoke/export/route | `scripts/runtime_admin.py` |
+| Immutable images / infrastructure | `scripts/Build-Runtime.ps1`, `deploy/*.bicep` |
+| Verified live record check | `scripts/verify_live.py` |
+
+Use the real delegated Fabric IQ connection. The supplied policy retrieval adapter is
+the supported Foundry Azure AI Search tool; do not count an absent Foundry IQ knowledge
+base as implemented. `AssessCoreCapacity` is the code-owned source assessment, not an
+arbitrary model-selected SQL tool.
 
 ## Task 01: Configure scoped specialist tools
 
@@ -47,9 +70,9 @@ In this task, you'll configure the five-agent team, bind core data and policy to
 
 ### Learning resource
 
-- [Core-profile configuration and result contract](../../../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md)
-- [Fabric IQ connection guide](/azure/foundry/agents/how-to/tools/fabric-iq)
-- [Hosted-agent deployment guide](/azure/foundry/agents/quickstarts/quickstart-hosted-agent)
+- [Core-profile configuration and result contract](../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md)
+- [Fabric IQ connection guide](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric-iq)
+- [Hosted-agent deployment guide](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-hosted-agent)
 
 ### Key tasks
 
@@ -63,8 +86,8 @@ The source profile is trusted configuration, not something a user can override i
 1. Open the provider's prepared project in [Microsoft Foundry](https://ai.azure.com). Locate your five logical agents and their source/configuration files in the editable runtime package.
 1. Open the core-profile instructions. Apply the shared contract to Current Capacity, CMO Analysis, COO Recommendation, and the orchestrator. Don't paste the original fixture dates or UK-manufacturing filter into the core configuration.
 1. Attach the supported Fabric IQ connection to Current Capacity. Confirm the ontology, source version, connection identity, and read-only entity scope against your Exercise 01 evidence.
-1. Invoke Current Capacity for LP001 in the provider's specialist test interface. Verify 270,000 target, 251,100 qualified, 18,900 gap, PL003, and eight delayed batches with source references. Reject an answer that sums unrelated launch programs.
-1. Attach Fabric IQ supplier context, the approved core policy knowledge source in Foundry IQ, and `AssessCoreCapacity` to CMO Analysis. Inspect its actual authenticated adapter and trusted data source.
+1. Invoke Current Capacity for LP001 through the actual pinned specialist version in Foundry and inspect its tool output. Verify 270,000 target, 251,100 qualified, 18,900 gap, PL003, and eight delayed batches with source references. Reject an answer that sums unrelated launch programs.
+1. Attach Fabric IQ supplier context, the approved core policy index through the Foundry Azure AI Search tool, and the code-owned `AssessCoreCapacity` assessment to CMO Analysis. Inspect its actual authenticated adapter and trusted data source.
 1. Invoke CMO Analysis with the validated LP001 result. Verify CMO001, CMO002, CMO006 in score order. Confirm explicit missing expiry/transfer approval and the separate simulated CMO006 lead-time conflict.
 
     **Expected result:** Specialists return source-backed findings, not final awards, and never call the fixture's `AssessCandidates` for a core request.
@@ -96,7 +119,7 @@ The guardrail must use independent deterministic evidence, not repeat the model'
 <summary><strong>Expand this section to view the solution</strong></summary>
 
 1. Open the provider's hosted guardrail source. Locate actual GitHub Copilot SDK client/session creation, registered tools, approved model authentication, and audit-store writes. If it is a prompt-only agent, stop and report the missing harness.
-1. Inspect `ValidateCoreDecision`. Compare its independent recomputation and failure paths against the [provider contract](../../../../Labfiles/04-caldova-agents/l400-provider-readiness.md). Confirm it uses policy `CORE-LP001-v1` and the trusted core snapshot.
+1. Inspect `ValidateCoreDecision`. Compare its independent recomputation and failure paths against the [provider contract](../../Labfiles/04-caldova-agents/l400-provider-readiness.md). Confirm it uses policy `CORE-LP001-v1` and the trusted core snapshot.
 1. Configure the guardrail's profile routing so only core requests invoke the core validator. Keep `gxp-checks` and POL-01 on the isolated fixture path. Bind the selected tool from runtime configuration, not an LLM-selected string.
 1. Sign in with the assigned Azure identity before the first cloud invocation. This command authenticates your CLI session; the container still needs its configured runtime identity.
 
@@ -139,8 +162,8 @@ Use the actual functions and typed clients in the provider package. Don't create
 <summary><strong>Expand this section to view the solution</strong></summary>
 
 1. Open the provider's editable runtime package in VS Code. Identify its orchestration entry point, typed result models, specialist invocation helper, error/logging helper, test command, and deployment manifest.
-1. Compare the existing implementation with the seven-step acceptance algorithm in the [core configuration](../../../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md). Mark the missing handoffs and release checks in your working copy.
-1. Use GitHub Copilot to propose a surgical implementation using this request. Review the proposed diff yourself before applying it.
+1. Compare the existing implementation with the seven-step acceptance algorithm in the [core configuration](../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md). Identify the handoffs and release checks in your working copy. Select one justified change or additional failure scenario; the reference implementation already supplies the basic algorithm.
+1. Use GitHub Copilot to review and extend the supplied implementation using this request. Review the proposed diff yourself before applying it.
 
     ```prompt
     In this prepared Caldova runtime, implement the core-profile acceptance algorithm using the existing typed clients and helpers. Call Current Capacity, call CMO Analysis only for a complete positive gap, then create a COO draft and invoke Compliance Guardrail before any final response. Require the actual deterministic tool verdict, matching trusted profile/source version, and required evidence. A missing/failed/error verdict or timeout must return Needs review with standard logging, never the unchecked draft. Run the guardrail for internal-only and unresolved cases too. Preserve API contracts and identity boundaries. Add tests with existing test tooling; don't invent SDK calls, credentials, source data, or successful traces. Show the diff for review.
@@ -148,7 +171,7 @@ Use the actual functions and typed clients in the provider package. Don't create
 
 1. Review and apply the change. Verify no exception path, streaming path, or early return exposes the draft before the gate. Validate required fields rather than treating a missing Boolean as success. Save with **Ctrl+S**.
 1. Bind the server-side profile to `core` for the production-facing lab endpoint. Keep fixture selection restricted to the provider's isolated test endpoint. Preserve version and correlation IDs in the exporter.
-1. Run the exact unit/type-check command documented for the provider package. Retain the command, result, and revision. If the package doesn't supply executable source and tests, mark this task **Blocked**.
+1. Run the exact unit/type-check command documented for the provider package. Retain the command, result, and revision. If your checkout lacks these supplied files, repair the checkout before continuing.
 
     **Expected result:** The change implements control flow in executable code, with tests that exercise positive and failure paths.
 
@@ -180,7 +203,7 @@ Deploy the reviewed artifact, then verify execution rather than relying on deplo
 
 1. Review the provider's tested deployment command, working directory, package manifest, identity configuration, target project, and rollback command. Record the previous revision/image digest before changing it.
 1. Configure the approved project endpoint, model deployment, ontology/data connections, core policy, source snapshot, and audit destination through the package's documented configuration names. Use managed identity or the documented Entra credential chain. Do not add model API keys.
-1. Build and deploy using the exact commands in the private handout. Record the actual commands with secret arguments redacted, their result, image digest or version, and UTC time. Do not substitute a guessed generic command.
+1. Build and deploy using the exact commands in [Runtime](../Runtime.md). Record the actual commands with secret arguments redacted, their result, image digest or version, and UTC time. Do not substitute a guessed generic command.
 1. Wait for readiness and run the package's authenticated health/smoke test. Invoke LP001 through the deployed endpoint and inspect a new trace with your actual deployed revision.
 1. Verify the core contract fields, ordered provisional suppliers, `CORE-LP001-v1`, source version, guardrail tool span, and audit record. Repeat one safe failed-verdict test against the isolated deployed revision.
 1. Compare local and remote behavior. If remote behavior still uses old code, inspect image digest, deployment target, loaded module, and connection version before altering prompts. Retain the rollback command and known-good revision for Exercise 04.
@@ -211,7 +234,7 @@ In this task, you'll connect the Foundry agent, republish Procurement Desk, and 
 
 ### Learning resource
 
-- [Connect to a Foundry agent from Copilot Studio](/microsoft-copilot-studio/add-agent-foundry-agent)
+- [Connect to a Foundry agent from Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent)
 
 ### Key tasks
 
@@ -225,8 +248,8 @@ The connection requires protocol support as well as the correct endpoint and age
 1. Open Procurement Desk in Copilot Studio. Select **Agents** > **Add an agent**, then select **Microsoft Foundry** under the external-agent choices.
 1. Select the approved connection or create the authorized connection using the actual Foundry project endpoint. Enter the deployed orchestrator's **Agent Id**, not an SDK session ID, registry ID, or display name.
 1. Use this description: `Assess Caldova LP001 launch capacity using the governed core data profile. Return evidence-backed provisional manufacturing options and unresolved readiness issues. Do not use for supplier contacts or RFP follow-up.`
-1. Apply the procurement delegation addition from the [core instructions](../../../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md). Keep RFP actions and core supplier identifiers separate.
-1. Verify the provider's Activity endpoint preflight. This endpoint requires programmatic enablement; the portal can still display only Responses and A2A. A Responses endpoint alone isn't sufficient.
+1. Apply the procurement delegation addition from the [core instructions](../../Labfiles/04-caldova-agents/l400-core-agent-instructions.md). Keep RFP actions and core supplier identifiers separate.
+1. Verify Activity support, the required authorization and the exact Foundry agent endpoint used by the Copilot Studio connection. Follow the [Foundry connection guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent). Publishing Procurement Desk to Teams does not configure the separate Foundry target automatically. Test an actual delegated call without weakening authentication.
 1. Test one procurement question and one core capacity question in the authoring pane. Inspect traces to verify only the capacity question reaches Foundry. If the connection reports HTTP 400 about Activity, use the tested enablement procedure rather than weakening authentication.
 
     **Expected result:** Routing reaches the executable new-Foundry runtime through its supported protocol.
@@ -264,7 +287,7 @@ A new connection can accidentally widen the data returned to the business user.
 <summary><strong>Expand this section to view the solution</strong></summary>
 
 1. Ask Teams for raw restricted batch records and unrestricted tool details. Verify only the permitted decision summary and evidence references are returned, not restricted payloads.
-1. Repeat the procurement-only source denial test and out-of-group activation test. Inspect source access and channel policy independently.
+1. Repeat the procurement-only source denial test and the out-of-group activation test with the **See agent in Teams** deep link from Exercise 02 (in-group: **Add** enabled; out-of-group: *Your organization has prevented this agent from being installed*). Inspect source access and channel policy independently.
 1. Ask the agent to switch to `qualification-fixture` or treat `CMO001` as `CMO-01`. Verify the production-facing endpoint refuses the profile change rather than mixing datasets.
 1. Save the routing, output, access, and source-version evidence as your D3 implementation checkpoint. Record any unresolved connection failure as a defect for diagnosis, not a passed deployment.
 
