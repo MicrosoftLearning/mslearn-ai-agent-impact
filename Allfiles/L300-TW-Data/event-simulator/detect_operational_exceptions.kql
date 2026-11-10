@@ -1,0 +1,25 @@
+// Create the typed destination table before you configure the Eventhouse destination.
+.create table operational_events (
+    EventID:string,
+    EventTime:datetime,
+    EventType:string,
+    PlantID:string,
+    ProductID:string,
+    BatchID:string,
+    CMOID:string,
+    LaunchProgramID:string,
+    MetricName:string,
+    MetricValue:real,
+    Threshold:real,
+    Unit:string,
+    Severity:string,
+    SourceSystem:string
+)
+
+// Create the JSON mapping used by the eventstream destination.
+.create-or-alter table operational_events ingestion json mapping 'operational_events_json'
+'[{"column":"EventID","path":"$.EventID"},{"column":"EventTime","path":"$.EventTime"},{"column":"EventType","path":"$.EventType"},{"column":"PlantID","path":"$.PlantID"},{"column":"ProductID","path":"$.ProductID"},{"column":"BatchID","path":"$.BatchID"},{"column":"CMOID","path":"$.CMOID"},{"column":"LaunchProgramID","path":"$.LaunchProgramID"},{"column":"MetricName","path":"$.MetricName"},{"column":"MetricValue","path":"$.MetricValue"},{"column":"Threshold","path":"$.Threshold"},{"column":"Unit","path":"$.Unit"},{"column":"Severity","path":"$.Severity"},{"column":"SourceSystem","path":"$.SourceSystem"}]'
+
+// Run the cohort-scoped verification in verify_operational_replay.kql after the replay.
+// Do not count events from multiple publisher invocations together.
+.show table operational_events ingestion json mappings

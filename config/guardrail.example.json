@@ -1,0 +1,20 @@
+{
+  "service": "guardrail",
+  "tenant_id": "",
+  "revision": "",
+  "runtime_identity_oid": "",
+  "managed_identity_client_id": "",
+  "project_endpoint": "",
+  "agents": {},
+  "allowed_user_oids": [],
+  "api_audience": "",
+  "allowed_client_ids": [],
+  "evidence_account_url": "",
+  "evidence_container": "evidence",
+  "sql_server": "",
+  "sql_database": "",
+  "sql_schema": "dbo",
+  "expected_source_version": "",
+  "guardrail_azure_endpoint": "",
+  "guardrail_model": ""
+}

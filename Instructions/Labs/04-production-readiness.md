@@ -9,6 +9,8 @@ lab:
 
 # Exercise 04: Troubleshoot, optimize, and validate
 
+> **Repository:** Start with [setup](../Setup.md) and the [runtime guide](../Runtime.md). Use your assigned tenant and check the actual results of each hands-on task.
+
 ## Scenario
 
 The first deployment is not the finish line. Jordan must diagnose a deliberately faulty qualification filter, prove that the deployed repair ran, isolate a cross-service incident, and show that an optimization doesn't weaken correctness or governance.
@@ -28,7 +30,19 @@ After you complete this exercise, you'll be able to:
 
 ## Before you begin
 
-Use the runtime from Exercise 03 or the provider's D3 checkpoint. The provider must keep the repair fixture isolated from core and supply the seeded incident and reset controls. Do not change a shared tenant policy to simulate a failure.
+Use your runtime from Exercise 03 or a captured D3 checkpoint. The isolated fixture
+service is `runtime/fixture.py`, deployed with the `fixture` image target. Follow
+[Runtime sections 5 and 7](../Runtime.md) for bounded guardrail fault modes, exact
+redeployment/export commands and immutable-version restore. Do not change shared tenant
+policy to simulate a failure.
+
+Run `scripts/Build-Runtime.ps1` again after the learner qualification repair, record the
+new fixture image digest, and deploy a concrete new version with `runtime_admin.py deploy`.
+Use the three files in `config/requests`, download their actual private receipts with
+`runtime_admin.py export`, then run `scripts/verify_live.py` to produce the original
+evaluator's three-case JSONL. Source-access, real Agent 365 mapping/block denial and
+Studio/Teams activation remain tenant checks. Missing mappings must remain a readiness
+gap; do not manufacture a registry entry to satisfy the evaluator.
 
 ## Task 01: Repair and redeploy the qualification filter
 
@@ -48,9 +62,9 @@ In this task, you'll reproduce the defect, review a Copilot-assisted correction,
 
 ### Learning resource
 
-- [Starter qualification module](../../../../Labfiles/04-caldova-agents/Python/qualification-tool/qualification.py)
-- [Independent policy](../../../../Labfiles/04-caldova-agents/Python/qualification-tool/policy.py)
-- [Original runtime/export contract](../../../../Labfiles/04-caldova-agents/README.md)
+- [Starter qualification module](../../Labfiles/04-caldova-agents/Python/qualification-tool/qualification.py)
+- [Independent policy](../../Labfiles/04-caldova-agents/Python/qualification-tool/policy.py)
+- [Original runtime/export contract](../../Labfiles/04-caldova-agents/README.md)
 
 ### Key tasks
 
@@ -187,8 +201,8 @@ In this task, you'll resolve one provider-seeded integration incident, verify ag
 
 ### Learning resource
 
-- [Agent registry](/microsoft-365/admin/manage/agent-registry)
-- [Connected Foundry agent prerequisites](/microsoft-copilot-studio/add-agent-foundry-agent)
+- [Agent registry](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry)
+- [Connected Foundry agent prerequisites](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent)
 
 ### Key tasks
 
@@ -273,8 +287,8 @@ In this task, you'll establish a small repeatable baseline, apply one reversible
 
 ### Learning resource
 
-- [Evaluate Foundry agents](/azure/foundry/observability/how-to/evaluate-agent)
-- [Fixture cases](../../../../Labfiles/04-caldova-agents/data/evaluation-cases.jsonl) and [export requirements](../../../../Labfiles/04-caldova-agents/README.md)
+- [Evaluate Foundry agents](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent)
+- [Fixture cases](../../Labfiles/04-caldova-agents/data/evaluation-cases.jsonl) and [export requirements](../../Labfiles/04-caldova-agents/README.md)
 
 ### Key tasks
 
@@ -343,7 +357,7 @@ The core operational result has its own acceptance matrix. Neither its policy no
 <details markdown="block">
 <summary><strong>Expand this section to view the solution</strong></summary>
 
-1. Check the deployed core result against every [workshop acceptance criterion](../index.md), using notebook/query evidence for quantities and traces for execution. Verify the full ordered shortlist, explicit uncertainty, selected replay references, and gate-before-final behavior.
+1. Check the deployed core result against every [workshop acceptance criterion](../../index.md), using notebook/query evidence for quantities and traces for execution. Verify the full ordered shortlist, explicit uncertainty, selected replay references, and gate-before-final behavior.
 1. In the provider-supported Foundry evaluation surface, configure the approved rubric and supported built-in evaluators for the actual target. Where available, include Task Adherence, Tool Call Accuracy, and Groundedness. Use actual messages, tool calls, and retrieved context with the current field mappings, not the answer-key JSONL alone.
 1. Record evaluator versions, actual score scales, per-case pass thresholds, judge deployment, and dataset before starting. Require every tested case to meet the declared thresholds and manually verify critical claims. Don't assume every evaluator uses the same numeric scale.
 1. Retain run IDs and per-case results. Mark missing metrics **Not evaluated**, timed-out jobs **Pending**, and unsupported targets **Blocked**. An incomplete required metric prevents a full readiness pass even if the local 24-check rubric passes.

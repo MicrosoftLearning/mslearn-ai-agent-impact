@@ -1,0 +1,11 @@
+﻿LaunchProgramID,LaunchProgramName,ProductID,TargetLaunchDate,TargetLaunchVolume,QualifiedCapacity,CapacityGapUnits,CapacityGapPercent,BindingConstraintPlantID,Status
+LP001,New Pharma Product Launch,P101,2026-11-26T00:00:00,270000,251100,18900,7,PL003,At Risk - capacity gap
+LP002,Cardio P104 Launch,P104,2026-09-26T00:00:00,180000,190000,0,0,,On Track
+LP003,Onco P113 Launch,P113,2026-02-27T00:00:00,150000,165000,0,0,,On Track
+LP004,Cardio P108 Launch,P108,2026-12-26T00:00:00,160000,172000,0,0,,On Track
+LP005,Cardio P114 Launch,P114,2026-01-27T00:00:00,140000,150000,0,0,,On Track
+LP006,RareD P124 Launch,P124,2026-03-27T00:00:00,90000,98000,0,0,,On Track
+LP007,Onco P125 Launch,P125,2026-04-27T00:00:00,120000,130000,0,0,,Planning
+LP008,Cardio P118 Launch,P118,2026-10-26T00:00:00,170000,180000,0,0,,On Track
+LP009,Immuno P102 Launch,P102,2026-05-27T00:00:00,110000,120000,0,0,,Planning
+LP010,Neuro P110 Launch,P110,2026-06-27T00:00:00,100000,112000,0,0,,Planning

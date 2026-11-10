@@ -1,0 +1,26 @@
+﻿ProductID,ProductName,TherapyArea,LifecycleStage,CommercialRegion,ManufacturingType
+P101,New Pharma Product,Injectable,Pre-Launch,Global,Biologics
+P102,Product 2,Immunology,Phase III,Global,Biologics
+P103,Product 3,Neurology,Commercial,Global,Biologics
+P104,Product 4,Cardiology,Pre-Launch,Global,Biologics
+P105,Product 5,Cardiology,Commercial,Global,Biologics
+P106,Product 6,Oncology,Commercial,Global,Biologics
+P107,Product 7,Cardiology,Phase III,Global,Biologics
+P108,Product 8,Cardiology,Pre-Launch,Global,Biologics
+P109,Product 9,Neurology,Commercial,Global,Biologics
+P110,Product 10,Neurology,Phase III,Global,Biologics
+P111,Product 11,Neurology,Commercial,Global,Biologics
+P112,Product 12,Cardiology,Commercial,Global,Biologics
+P113,Product 13,Oncology,Pre-Launch,Global,Biologics
+P114,Product 14,Cardiology,Pre-Launch,Global,Biologics
+P115,Product 15,Rare Disease,Phase III,Global,Biologics
+P116,Product 16,Rare Disease,Phase III,Global,Biologics
+P117,Product 17,Rare Disease,Phase III,Global,Biologics
+P118,Product 18,Cardiology,Pre-Launch,Global,Biologics
+P119,Product 19,Cardiology,Phase III,Global,Biologics
+P120,Product 20,Neurology,Commercial,Global,Biologics
+P121,Product 21,Neurology,Phase III,Global,Biologics
+P122,Product 22,Neurology,Commercial,Global,Biologics
+P123,Product 23,Immunology,Phase III,Global,Biologics
+P124,Product 24,Rare Disease,Pre-Launch,Global,Biologics
+P125,Product 25,Oncology,Pre-Launch,Global,Biologics

@@ -1,0 +1,25 @@
+**/__pycache__/
+*.py[cod]
+.venv*/
+**/.venv*/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+/config/*.local.json
+/state/
+/evidence/
+/secrets/
+/logs/
+**/results/
+.azure/
+.azd/
+*.pem
+*.pfx
+*.key
+
+# Generated tenant-specific flow packages
+CaldovaFollowUp_*.zip
+CaldovaFollowUp_*.definition.json
+lifecycle/ex2/*.zip
+lifecycle/ex2/*.definition.json

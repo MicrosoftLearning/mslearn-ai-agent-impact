@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "project": "41-620-21",
+  "scope": "Caldova L400 workshop assets and required upstream licenses",
+  "files": [
+    {
+      "path": "Allfiles/L300-TW-Data/README.md",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/README.md",
+      "upstream_git_blob": "8aa60bd477be87fd39df88981384388ea9443ccb",
+      "upstream_sha256": "67326ae93665636782244812f1b0d9d00e375d8fc6520c63d4d7eab817997740",
+      "imported_sha256": "67326ae93665636782244812f1b0d9d00e375d8fc6520c63d4d7eab817997740",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/agent/business-context-instructions.txt",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/agent/business-context-instructions.txt",
+      "upstream_git_blob": "e4ecb787d9b3a908fbffbec52a81768c39513368",
+      "upstream_sha256": "a530bdda287109a8fbbc4ca3efc074df5c2f8507045eb79140c6e5db72a43638",
+      "imported_sha256": "a530bdda287109a8fbbc4ca3efc074df5c2f8507045eb79140c6e5db72a43638",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/data/core/launch_program.csv",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/data/core/launch_program.csv",
+      "upstream_git_blob": "2b5fdf81af5bb8c5f31c62e3f526bc11541e4f1a",
+      "upstream_sha256": "c5d08cff5a6d652ed67f4d26196f40f5bf5b637a2aa2b881bf0aaef28d452970",
+      "imported_sha256": "c5d08cff5a6d652ed67f4d26196f40f5bf5b637a2aa2b881bf0aaef28d452970",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/data/core/manufacturing_batch_schedule.csv",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/data/core/manufacturing_batch_schedule.csv",
+      "upstream_git_blob": "96943f566c1fcea03e9f0c0084150c9fa84268d8",
+      "upstream_sha256": "377c18c3efbc4afbca47bc6840d3b28a98555a970acb1cc66dd5bd14e16499d5",
+      "imported_sha256": "377c18c3efbc4afbca47bc6840d3b28a98555a970acb1cc66dd5bd14e16499d5",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/data/core/manufacturing_capacity_plan.csv",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/data/core/manufacturing_capacity_plan.csv",
+      "upstream_git_blob": "20f950016af0015a0f6146e64da6b5bd8a7488a3",
+      "upstream_sha256": "20c4b5eebc5f8629fb853911c36244b008de6220ee50418c4e10b51e75781a3d",
+      "imported_sha256": "20c4b5eebc5f8629fb853911c36244b008de6220ee50418c4e10b51e75781a3d",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/data/core/plants.csv",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/data/core/plants.csv",
+      "upstream_git_blob": "87ef8e771b6990c62513b1438325672b39094967",
+      "upstream_sha256": "d222b490afaeedd7eada6e018227810c043173e1efeca483cf6842fd452a838f",
+      "imported_sha256": "d222b490afaeedd7eada6e018227810c043173e1efeca483cf6842fd452a838f",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/data/core/procurement_cmo_evaluation.csv",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/data/core/procurement_cmo_evaluation.csv",
+      "upstream_git_blob": "50c98e75243dde68abe79577f30951f274985f5a",
+      "upstream_sha256": "0f2296f6425497dceabce62e6bc39027a11d39372d5e88b4b9695ded0d5da6d1",
+      "imported_sha256": "0f2296f6425497dceabce62e6bc39027a11d39372d5e88b4b9695ded0d5da6d1",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/data/core/products.csv",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/data/core/products.csv",
+      "upstream_git_blob": "640eb936cc9bdb5b39ad0c651df4fe9ff50f1447",
+      "upstream_sha256": "bf51ad5cc0c04e919faad3b54e84347931478411412efe6cbe5212fd6d68593d",
+      "imported_sha256": "bf51ad5cc0c04e919faad3b54e84347931478411412efe6cbe5212fd6d68593d",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/event-simulator/detect_operational_exceptions.kql",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/event-simulator/detect_operational_exceptions.kql",
+      "upstream_git_blob": "ad215f19c986be6c2f27dc226fc6b8f181681b57",
+      "upstream_sha256": "a4ccfd097b62c9392c1fd6dffc1c54e761ae587e7eac57491d50e54cfc8df648",
+      "imported_sha256": "a4ccfd097b62c9392c1fd6dffc1c54e761ae587e7eac57491d50e54cfc8df648",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/event-simulator/event_templates.json",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/event-simulator/event_templates.json",
+      "upstream_git_blob": "30adc2f8892a68c63bd702659073e77e20d312f7",
+      "upstream_sha256": "07b46845a7649a1f2f2483be6685eaadd616d9ceb0305530947ff4e861aaf656",
+      "imported_sha256": "07b46845a7649a1f2f2483be6685eaadd616d9ceb0305530947ff4e861aaf656",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/event-simulator/replay_events.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/event-simulator/replay_events.py",
+      "upstream_git_blob": "d46f12be03e360f5cb529346db811e155bd15a8b",
+      "upstream_sha256": "64603b8eaec4b20c22ea8bdded9d830ab4f452504cfb9148b92fe10f0ec157e0",
+      "imported_sha256": "64603b8eaec4b20c22ea8bdded9d830ab4f452504cfb9148b92fe10f0ec157e0",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/event-simulator/requirements.txt",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/event-simulator/requirements.txt",
+      "upstream_git_blob": "e6a8770d552c85034e4b117f68276b5b96fffb4a",
+      "upstream_sha256": "660c2f43c72d249e5cb48126e0a29239e28fdeac0c55e04b53686ae645c91284",
+      "imported_sha256": "660c2f43c72d249e5cb48126e0a29239e28fdeac0c55e04b53686ae645c91284",
+      "modified_on_import": false
+    },
+    {
+      "path": "Allfiles/L300-TW-Data/notebooks/curate_caldova_tables.ipynb",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Allfiles/L300-TW-Data/notebooks/curate_caldova_tables.ipynb",
+      "upstream_git_blob": "b6dd15af1874f2bfbe51454a858785de1169ac6c",
+      "upstream_sha256": "c56ca0e012154019250634d94a229ba0ad31d87924373ae8165364ac3da0f6f3",
+      "imported_sha256": "c56ca0e012154019250634d94a229ba0ad31d87924373ae8165364ac3da0f6f3",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/.gitignore",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/.gitignore",
+      "upstream_git_blob": "cb9491c052cf102d58f907f83540d85b3ba6a40e",
+      "upstream_sha256": "74440e672254d5761dc55eb514d78e03169d3f364ee5b4b58323be0bb0746aef",
+      "imported_sha256": "74440e672254d5761dc55eb514d78e03169d3f364ee5b4b58323be0bb0746aef",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/capacity_tool.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/capacity_tool.py",
+      "upstream_git_blob": "9289f03d04fdbda4b60f6a8e22540450edd626fd",
+      "upstream_sha256": "f881b6702685c2d4e347a1c9c56a75088763021609404bd8bc41759ad49d85a5",
+      "imported_sha256": "f881b6702685c2d4e347a1c9c56a75088763021609404bd8bc41759ad49d85a5",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/evaluate.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/evaluate.py",
+      "upstream_git_blob": "f9dba05e584619065d4795a96a9b7c13e255810b",
+      "upstream_sha256": "8050226dea53b39f63bf82ac9c5ace9d10774f8042f519ed07a35bce8b4465d2",
+      "imported_sha256": "8050226dea53b39f63bf82ac9c5ace9d10774f8042f519ed07a35bce8b4465d2",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/gxp_checks.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/gxp_checks.py",
+      "upstream_git_blob": "d4b2f77f5229f163f4712af90f3cc0e8415db2a2",
+      "upstream_sha256": "65daa3a79ce748ba7187cabc14f5deb6b0886cc4d60710dab6079935fe367cbe",
+      "imported_sha256": "65daa3a79ce748ba7187cabc14f5deb6b0886cc4d60710dab6079935fe367cbe",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/policy.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/policy.py",
+      "upstream_git_blob": "f76c6d98e6840f907e80a8b17e00c43bfa3484cc",
+      "upstream_sha256": "e377185088f8637bbf97eaaa16e826004b83a099c0d164c044923b1719fef2fd",
+      "imported_sha256": "e377185088f8637bbf97eaaa16e826004b83a099c0d164c044923b1719fef2fd",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/qualification.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/qualification.py",
+      "upstream_git_blob": "2693477d6369dc43ccffbd1edb95131fe5cfa736",
+      "upstream_sha256": "b36a342418f6c9ca718f8bc6096d1e4ce8f124d059b8751cc62b499c580cf55e",
+      "imported_sha256": "b36a342418f6c9ca718f8bc6096d1e4ce8f124d059b8751cc62b499c580cf55e",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/solutions/qualification.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/solutions/qualification.py",
+      "upstream_git_blob": "7faa96b9b4120e8f5e44c8f27e88fb6944c50732",
+      "upstream_sha256": "1de783e2a351b58e512058dc8c632977aea89802ed4448cff3c563b01ffbe0a3",
+      "imported_sha256": "1de783e2a351b58e512058dc8c632977aea89802ed4448cff3c563b01ffbe0a3",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/tests/test_baseline.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/tests/test_baseline.py",
+      "upstream_git_blob": "cb47cd420fa23e0f563c012c02cb7b8375344e31",
+      "upstream_sha256": "955bd7fff372418a266979b41bfc7a6e2962079e2b5ad8bb9bb24617dfabd32e",
+      "imported_sha256": "955bd7fff372418a266979b41bfc7a6e2962079e2b5ad8bb9bb24617dfabd32e",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/tests/test_evaluation.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/tests/test_evaluation.py",
+      "upstream_git_blob": "c73fc5a6a6e5a1fa3dee56bf4b3d6cf98cb3cc5e",
+      "upstream_sha256": "cee04c55e6ebd4338ad35dae1906a170d308419271852bdbf151e6444d0288d9",
+      "imported_sha256": "cee04c55e6ebd4338ad35dae1906a170d308419271852bdbf151e6444d0288d9",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/Python/qualification-tool/tests/test_regression.py",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/Python/qualification-tool/tests/test_regression.py",
+      "upstream_git_blob": "fbe62b55766352b1b62b1a3d0984a93d5bf160f4",
+      "upstream_sha256": "fd1fe7d0d2b422e7295f41d78744af5bdf84407b0b6d05a4cfcb2d02a12f498a",
+      "imported_sha256": "fd1fe7d0d2b422e7295f41d78744af5bdf84407b0b6d05a4cfcb2d02a12f498a",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/README.md",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/README.md",
+      "upstream_git_blob": "48b2407167cad9d447300aa0363bafbfeb377eed",
+      "upstream_sha256": "8d5530376bdfcd23c63740e176058aafeb40a1e9ec4136ed5e4e24facab77c64",
+      "imported_sha256": "2eda2c48f4e7b0b77413353cc6557d8d21e8c23e617038b1305e7f25154a325d",
+      "modified_on_import": true
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/agent-instructions.md",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/agent-instructions.md",
+      "upstream_git_blob": "5aa0b89aac559cf340f768788599b3b03f2d0caa",
+      "upstream_sha256": "de54e49f2a7fc6aebe883efced9f2aa14e818247b672f1c3cfc402f4c9570aaa",
+      "imported_sha256": "de54e49f2a7fc6aebe883efced9f2aa14e818247b672f1c3cfc402f4c9570aaa",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/data/approved-suppliers.md",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/data/approved-suppliers.md",
+      "upstream_git_blob": "c036b67468bc3f9840129628c04c3ed8ccbd66e1",
+      "upstream_sha256": "28205b23ef0d3dbd88cec48750c35802553debc08ba200938056ac428a12707d",
+      "imported_sha256": "28205b23ef0d3dbd88cec48750c35802553debc08ba200938056ac428a12707d",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/data/capacity-definitions.md",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/data/capacity-definitions.md",
+      "upstream_git_blob": "e904512e53bf0f1e9de85816c0629bd6d2a02d0e",
+      "upstream_sha256": "df753a70e94d618b3fa6af32a15508f6237e9b1aa321bdad5c4051c06b1dd400",
+      "imported_sha256": "df753a70e94d618b3fa6af32a15508f6237e9b1aa321bdad5c4051c06b1dd400",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/data/evaluation-cases.jsonl",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/data/evaluation-cases.jsonl",
+      "upstream_git_blob": "2dd7a9e62724b9e92df3fc079f852f8d1a79a37a",
+      "upstream_sha256": "d39a13bbb67b6a48999821cef5079d0a2fc654d3fc8a2962a0ddbb0b730bafc9",
+      "imported_sha256": "d39a13bbb67b6a48999821cef5079d0a2fc654d3fc8a2962a0ddbb0b730bafc9",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/data/qualification-policy.md",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/data/qualification-policy.md",
+      "upstream_git_blob": "5401f22f9d7276422fadc0bfabac80e6d81a96be",
+      "upstream_sha256": "31fbaef824b39598a6433e7a3c53a6a0f9bc4d667aae8613db31649e3b9a2c19",
+      "imported_sha256": "31fbaef824b39598a6433e7a3c53a6a0f9bc4d667aae8613db31649e3b9a2c19",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/data/rfp-tracker.csv",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/data/rfp-tracker.csv",
+      "upstream_git_blob": "502170e82029a4a4ae6639d2953f569307420869",
+      "upstream_sha256": "f0b91b33fc982374d17260c6513155ccb601749c55b541969d07890ff6733faa",
+      "imported_sha256": "f0b91b33fc982374d17260c6513155ccb601749c55b541969d07890ff6733faa",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/data/scenario.json",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "Labfiles/04-caldova-agents/data/scenario.json",
+      "upstream_git_blob": "fd3cf6bf8d3bb6a17cbe37c849349689b2dcedf0",
+      "upstream_sha256": "b4e29c5053ad529e74bd5e1119fb0bb759f75c60c0c9e23457ca8e77e9306401",
+      "imported_sha256": "b4e29c5053ad529e74bd5e1119fb0bb759f75c60c0c9e23457ca8e77e9306401",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/l400-core-agent-instructions.md",
+      "source_repository": "hopero929/caip",
+      "source_commit": "8114fb65756ed442c0f470434e2b7ec2ad686cad",
+      "source_path": "Labfiles/04-caldova-agents/l400-core-agent-instructions.md",
+      "upstream_git_blob": "d8d432ba88e37230905cb7f253662b38029ea8ee",
+      "upstream_sha256": "ef92634a8d4df31b44acfe83052da71f10835441314d3556c0af5e3a49052d4b",
+      "imported_sha256": "ef92634a8d4df31b44acfe83052da71f10835441314d3556c0af5e3a49052d4b",
+      "modified_on_import": false
+    },
+    {
+      "path": "Labfiles/04-caldova-agents/l400-provider-readiness.md",
+      "source_repository": "hopero929/caip",
+      "source_commit": "8114fb65756ed442c0f470434e2b7ec2ad686cad",
+      "source_path": "Labfiles/04-caldova-agents/l400-provider-readiness.md",
+      "upstream_git_blob": "7f8e005a4d0297d3a67bb3ede229a39f607f63a8",
+      "upstream_sha256": "a44a655f2c051125b58698836b9543c22b4907824e654fb2bb4a460ce0f010dc",
+      "imported_sha256": "f50dd16799afcc98756d4f5d47817d27eee4f6550e17fff485b1a3277c3f22b2",
+      "modified_on_import": true
+    },
+    {
+      "path": "licenses/MicrosoftLearning-caip-LICENSE",
+      "source_repository": "MicrosoftLearning/caip",
+      "source_commit": "ad7f3e8361df2f7b44977221461f6c90718b7209",
+      "source_path": "LICENSE",
+      "upstream_git_blob": "8863003afb7e99dedaca2016c6495cbcb6541143",
+      "upstream_sha256": "10a5854af96a8876aff77f850122cd8b660c1d6b152ffd74f298ab9a96d15764",
+      "imported_sha256": "10a5854af96a8876aff77f850122cd8b660c1d6b152ffd74f298ab9a96d15764",
+      "modified_on_import": false
+    },
+    {
+      "path": "licenses/hopero929-caip-LICENSE",
+      "source_repository": "hopero929/caip",
+      "source_commit": "8114fb65756ed442c0f470434e2b7ec2ad686cad",
+      "source_path": "LICENSE",
+      "upstream_git_blob": "8863003afb7e99dedaca2016c6495cbcb6541143",
+      "upstream_sha256": "10a5854af96a8876aff77f850122cd8b660c1d6b152ffd74f298ab9a96d15764",
+      "imported_sha256": "10a5854af96a8876aff77f850122cd8b660c1d6b152ffd74f298ab9a96d15764",
+      "modified_on_import": false
+    }
+  ]
+}
